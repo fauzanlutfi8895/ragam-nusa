@@ -31,35 +31,53 @@
         #myCarousel .carousel-inner .carousel-item {
             width: 100%;
         }
+
+        body {
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Carousel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+    <header style="color:white">
+        <nav class="navbar p-2" , style="display: block; background-color: #FFBB5C">
+            <div class="row align-items-end">
+                <div class="col-sm">
+                    <div class="row align-items-end">
+                        <div class="col d-flex justify-content-end">Bantuan :</div>
+                        <div class="col"><img src="<?= base_url('assets'); ?>/images/icon/icn-phone.png" alt="">555-0118</div>
+                        <div class="col">ragam.nusa@help.com</div>
+                    </div>
+                </div>
+                <div class="col-sm d-flex justify-content-end">Mari lestarikan kesenian daerah Nusantara</div>
+                <div class="col d-flex justify-content-end">Follow Us : <img src="<?= base_url('assets'); ?>/images/icon/social-media.png" alt=""></div>
+            </div>
+        </nav>
+        <nav class="navbar p-3" , style="display: block; background-color: #FF9017">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="row align-items-end">
+                        <div class="col"><img src="<?= base_url('assets'); ?>/images/logo-navbar.png" style="width: 160px;"></div>
+                        <div class="col d-flex justify-content-end">Home</div>
+                        <div class="col d-flex justify-content-center">Artikel</div>
+                        <div class="col d-flex justify-content-start">About</div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <form class="form-inline" style="display:flex">
+                        <input class="form-control xs-1 w-75" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="background-color:white">Search</button>
                     </form>
+                </div>
+                <div class="col-sm">
+                    <div class="row align-items-end">
+                        <div class="col justify-content-end"><img src="<?= base_url('assets'); ?>/images/icon/icn-user.png" alt="">Login/Register</div>
+                        <div class="col justify-content-center"><img src="<?= base_url('assets'); ?>/images/icon/icn-cart.png" alt="">Shop Cart</div>
+                        <div class="col justify-content-start"><img src="<?= base_url('assets'); ?>/images/icon/icn-love.png" alt="">1</div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -113,7 +131,7 @@
         </div>
         <div class="container marketing">
 
-        <h1 class="h1 text-center mb-4">Tim Ragam Nusa</h1>
+            <h1 class="h1 text-center mb-4">Tim Ragam Nusa</h1>
             <div class="row">
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="<?= base_url('assets'); ?>/images/coming-soon-1.jpg" alt="" width="160" height="160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -172,7 +190,7 @@
                     <p class="lead">NussaConnect adalah fitur inovatif yang dirancang untuk memberikan rekomendasi seni yang relevan kepada pengguna, dengan tujuan meningkatkan pengalaman mereka dalam mengeksplorasi dunia seni.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?= base_url('assets'); ?>/images/nusa-connect.jpg" alt="" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?= base_url('assets'); ?>/images/nusa-connect.jpg" alt="" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
@@ -184,7 +202,7 @@
                     <p class="lead">NusaPress adalah fitur yang menyediakan konten informatif untuk memperluas wawasan yang memperkaya tentang kekayaan budaya Indonesia yang tak ternilai harganya.</p>
                 </div>
                 <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?= base_url('assets'); ?>/images/nusapres.jpg" alt="" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?= base_url('assets'); ?>/images/nusapres.jpg" alt="" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
